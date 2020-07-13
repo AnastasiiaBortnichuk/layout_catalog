@@ -24,15 +24,15 @@
     line-height: $nav-height;
     text-transform: uppercase;
     color: #000;
+    transition: color 1s;
     &:hover {
-      color: #00acdc;
-      transition: color 1s;
+      color: $main-color;
     }
   }
 }
 
 .is-active {
-  color: #00acdc;
+  color: $main-color;
   position: relative;
   &::after {
     content: "";
@@ -41,7 +41,7 @@
     height: 4px;
     left: 0;
     bottom: 0;
-    background: #00acdc;
+    background: $main-color;
     border-radius: 2px;
   }
 }
