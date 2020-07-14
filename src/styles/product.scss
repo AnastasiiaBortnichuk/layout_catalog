@@ -13,6 +13,11 @@
     height: 134px;
     width: 160px;
     margin-bottom: 45px;
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.2) translateY(-12px);
+      outline: 3px solid #f3f3f3;
+    }
   }
   &__name {
     @include nameFont;
@@ -61,6 +66,7 @@
       border-radius: 5px;
       color: #fff;
       @include buttonFont;
+      transition: background-color 1s, color 1s;
 
       &:hover {
         background: #fff;

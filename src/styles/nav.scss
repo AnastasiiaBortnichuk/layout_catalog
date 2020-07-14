@@ -24,6 +24,7 @@
     line-height: $nav-height;
     text-transform: uppercase;
     color: #000;
+    transition: color 1s;
     &:hover {
       color: $main-color;
     }
