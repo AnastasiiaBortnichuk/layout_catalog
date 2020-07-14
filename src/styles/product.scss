@@ -15,11 +15,8 @@
     margin-bottom: 45px;
     transition: transform 1s;
     &:hover {
-      transform: scale(1.2);
-      border: 3px solid #f3f3f3;
-      box-sizing: content-box;
-      transform-origin: bottom;
-      margin-bottom: 39px;
+      transform: scale(1.2) translateY(-12px);
+      outline: 3px solid #f3f3f3;
     }
   }
   &__name {
