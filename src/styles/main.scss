@@ -20,10 +20,10 @@ body {
 }
 
 .product-container {
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, $card-width);
+  grid-column-gap: $card-gap;
+  grid-row-gap: 50px;
   max-width: 4*$card-width + 4*$card-gap;
 }
 
