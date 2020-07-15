@@ -14,17 +14,16 @@ body {
 @import "header";
 @import "nav";
 
-.main {
-  display: flex;
-  justify-content: center;
-}
-
 .product-container {
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  max-width: 4*$card-width + 4*$card-gap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  grid-column-gap: $card-gap;
+  grid-row-gap: 50px;
+  justify-content: center;
+
+  @media (min-width: (4*$card-width + 3*$card-gap)) {
+    grid-template-columns: repeat(4, $card-width);
+  }
 }
 
 @import "product";
